@@ -15,7 +15,6 @@ class FeedListAdapter(val mContext: Context) : RecyclerView.Adapter<FeedListAdap
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtName: AppCompatTextView = itemView.findViewById(R.id.txtName)
         val txtDesignation: AppCompatTextView = itemView.findViewById(R.id.txtDesignation)
-        val txtEmail: AppCompatTextView = itemView.findViewById(R.id.txtEmail)
         val tvPhone: AppCompatTextView = itemView.findViewById(R.id.txtPhone)
         val txtEntryTime: AppCompatTextView = itemView.findViewById(R.id.txtEntryTime)
         val txtExitTime: AppCompatTextView = itemView.findViewById(R.id.txtExitTime)
@@ -25,7 +24,6 @@ class FeedListAdapter(val mContext: Context) : RecyclerView.Adapter<FeedListAdap
         val info = mList[position]
         holder.txtName.text = info.firstName + " " + info.lastName
         holder.txtDesignation.text = "Designation: " + info.designation
-        holder.txtEmail.text = "E-mail: " + info.email
         holder.tvPhone.text = "Phone: " + info.phone
         if (info.entryTime.isNotEmpty()){
             holder.txtEntryTime.visibility = View.VISIBLE

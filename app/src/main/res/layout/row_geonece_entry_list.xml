@@ -35,16 +35,6 @@
             android:textSize="@dimen/_11ssp" />
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:text="E-mail"
-            android:drawablePadding="@dimen/_6sdp"
-            android:drawableStart="@drawable/ic_email"
-            android:textColor="@color/colorGrey"
-            android:textSize="@dimen/_11ssp" />
 
 
         <androidx.appcompat.widget.AppCompatTextView

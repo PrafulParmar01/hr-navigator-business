@@ -29,31 +29,17 @@ public class AppPermission {
             permissionsList.add(Manifest.permission.POST_NOTIFICATIONS);
             permissionsList.add(Manifest.permission.ACCESS_FINE_LOCATION);
             permissionsList.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-            permissionsList.add(Manifest.permission.ACCESS_BACKGROUND_LOCATION);
-            permissionsList.add(Manifest.permission.READ_MEDIA_IMAGES);
-            permissionsList.add(Manifest.permission.CAMERA);
         } else if (SDK_INT >= Build.VERSION_CODES.S) {
             //API Level (12) 32
             permissionsList.add(Manifest.permission.ACCESS_FINE_LOCATION);
             permissionsList.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-            permissionsList.add(Manifest.permission.ACCESS_BACKGROUND_LOCATION);
-            permissionsList.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.CAMERA);
         } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.Q) {
             //API level 29
-            permissionsList.add(Manifest.permission.ACCESS_BACKGROUND_LOCATION);
             permissionsList.add(Manifest.permission.ACCESS_FINE_LOCATION);
             permissionsList.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-            permissionsList.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.CAMERA);
         } else {
             permissionsList.add(Manifest.permission.ACCESS_FINE_LOCATION);
             permissionsList.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-            permissionsList.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            permissionsList.add(Manifest.permission.CAMERA);
         }
         /*Handle Permissions*/
         return permissionsList;

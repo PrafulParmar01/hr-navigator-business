@@ -244,7 +244,8 @@ class LoginActivity : BaseActivity() {
                     if (dataSnapshot.exists()) {
                         for (snapshot in dataSnapshot.children) {
                             val companyModel = snapshot.getValue(CompanyModel::class.java)
-                            PrefUtil.putStringPref(PrefUtil.PREF_BUSINESS_MODEL,Gson().toJson(companyModel),applicationContext)
+                            PrefUtil.putStringPref(PrefUtil.PREF_BUSINESS_MODEL, Gson().toJson(companyModel),applicationContext)
+                            PrefUtil.putBooleanPref(PrefUtil.PREF_IS_PROFILE_FILLED, true, applicationContext)
                             startActivityWithFadeInAnimation(DashboardActivity.getIntent(applicationContext))
                             Log.e("Auth", "Data exists:${Gson().toJson(companyModel)}")
                         }

@@ -8,13 +8,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -33,7 +27,15 @@
         android:theme="@style/AppTheme"
         tools:targetApi="33">
 
-      <activity
+        <activity
+            android:name=".ui.accounts.ProfileInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.accounts.AccountsActivity"
+            android:exported="false" />
+
+
+        <activity
             android:name=".ui.location.LocationActivity"
             android:exported="false" />
 
@@ -43,18 +45,17 @@
 
         <activity
             android:name=".ui.profile.ProfileActivity"
-            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
 
         <activity
             android:name=".ui.home.DashboardActivity"
-            android:theme="@style/HomeTheme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/HomeTheme" />
 
         <activity
             android:name=".ui.login.LoginActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.start.StartActivity"
             android:exported="true">
@@ -67,7 +68,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBdnTPrQvexr6f_ry5ILKuGPu-fVMREDus" />
+            android:value="AIzaSyBDxkmHbIwJF8Z2U29iYwe0YNyuS7uQKDQ" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

@@ -1,13 +1,5 @@
 <resources>
     <string name="app_name">HR Navigator Business</string>
-    <string name="title_activity_dashboard">DashboardActivity</string>
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="label_customers">Customers</string>
-    <string name="label_admin_panel">Admin Panel</string>
-    <string name="label_customer_request">Customer Request</string>
     <string name="label_save">Save</string>
 
     <string name="label_you_will_receive">You will receive an SMS verification that may apply message and data rates.</string>

@@ -15,6 +15,9 @@ import android.view.View
 import android.view.Window
 import androidx.annotation.RequiresApi
 import androidx.core.view.WindowInsetsControllerCompat
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import com.hr.navigator.business.ui.profile.CompanyModel
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -202,6 +205,14 @@ open class UtilsMethod {
                 matrix,
                 true
             )
+        }
+
+
+        fun convertStringToCompanyModel(mContext: Context): CompanyModel {
+            val userJson = PrefUtil.getStringPref(PrefUtil.PREF_BUSINESS_MODEL, mContext)
+            val tokenType = object : TypeToken<CompanyModel>() {}.type
+            val userModel: CompanyModel = Gson().fromJson(userJson, tokenType)
+            return userModel
         }
     }
 

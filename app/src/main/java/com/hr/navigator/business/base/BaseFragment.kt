@@ -15,13 +15,12 @@ open class BaseFragment : Fragment() {
     val compositeDisposable = CompositeDisposable()
 
     lateinit var baseActivity: Activity
-    lateinit var dialogUtils: JSDialogUtils
-    var mCurrentImageUri: Uri? = null
+    lateinit var progressDialogs: JSDialogUtils
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        dialogUtils = JSDialogUtils(activity)
+        progressDialogs = JSDialogUtils(activity)
     }
 
     override fun onAttach(context: Context) {

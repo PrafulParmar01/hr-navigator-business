@@ -11,10 +11,4 @@
         android:icon="@drawable/ic_employee_list"
         android:title="Employees"/>
 
-    <item
-        android:id="@+id/menuHome2"
-        android:enabled="true"
-        android:icon="@drawable/ic_employee_list"
-        android:title="Profile"/>
-
 </menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:tint="@color/colorLightGray"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgUser"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_account_circle"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgUser"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textColor="@color/colorTheme"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Designation"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_10ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="E-mail"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_10ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Phone"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

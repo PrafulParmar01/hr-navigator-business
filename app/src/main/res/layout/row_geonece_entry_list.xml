@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Username"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/_15ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Designation"
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_designation"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="E-mail"
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_email"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Phone"
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_local_phone"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEntryTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entry Time"
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_time"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtExitTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Exit time : "
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_time"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
